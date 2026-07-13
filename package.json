@@ -1,0 +1,28 @@
+{
+  "name": "poth-foliyo",
+  "version": "1.0.0",
+  "description": "3D Portfolio Website with React, Node.js, MongoDB, and Three.js",
+  "private": true,
+  "scripts": {
+    "setup": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build": "cd client && npm run build",
+    "start:server": "cd server && npm start",
+    "start": "npm run dev:server",
+    "lint": "cd client && npm run lint"
+  },
+  "keywords": [
+    "portfolio",
+    "react",
+    "three.js",
+    "mongodb",
+    "node.js"
+  ],
+  "author": "Nauman Khan",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

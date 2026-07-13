@@ -1,0 +1,25 @@
+/* Global App Styles */
+
+body {
+  margin: 0;
+  background: #050816;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  transition: 0.4s;
+}
+
+button:hover {
+  transform: translateY(-4px);
+}

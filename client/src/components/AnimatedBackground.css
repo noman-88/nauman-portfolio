@@ -1,0 +1,41 @@
+.animated-background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  background: #050816;
+  pointer-events: none;
+}
+
+.animated-background::before,
+.animated-background::after {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(0, 245, 255, 0.3), transparent);
+  filter: blur(100px);
+  animation: float 15s infinite;
+}
+
+.animated-background::before {
+  top: -10%;
+  left: -5%;
+  animation-delay: 0s;
+}
+
+.animated-background::after {
+  bottom: -10%;
+  right: -5%;
+  animation-delay: 5s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(30px, 30px);
+  }
+}
